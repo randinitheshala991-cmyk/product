@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api/products';
+const API_BASE = '/api/products';
 
 export const getProducts = () => axios.get(API_BASE);
 export const getProduct = (id) => axios.get(`${API_BASE}/${id}`);
